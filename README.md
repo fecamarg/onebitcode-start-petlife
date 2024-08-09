@@ -1,3 +1,1 @@
-Projeto Pet Life
-
-Veja o projeto aqui: https://fecamarg.github.io/onebitcode-start-petlife/
+Veja o projeto clicando aqui: <a href="https://fecamarg.github.io/onebitcode-start-petlife/" target="_blank">Projeto Pet Life</a>
