@@ -31,7 +31,6 @@ header nav a {
   display: flex;
   align-items: center;
   gap: 32px;
-  /* topo, direita, baixo, esquerda */
   padding: 24px 80px 128px 80px;
   position: relative;
 }
@@ -52,7 +51,6 @@ h2 {
   background-color: #ff725e;
   border-radius: 8px;
   color: #ffffff;
-  /* vertical, horizontal */
   padding: 16px 32px;
   text-decoration: none;
 }
@@ -69,7 +67,7 @@ h2 {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: -10; /* Com um valor negativo, ele vai para trás da imagem */
+  z-index: -10;
 }
 
 #clinica {
@@ -99,7 +97,6 @@ h2 {
 }
 
 #duvidas {
-  /* Poderíamos colocar junto com o #clinica */
   display: flex;
   align-items: center;
   gap: 64px;
@@ -197,4 +194,117 @@ footer p a {
 
 #copyright a {
   color: #ff9a6c;
+}
+
+/* Media Queries */
+
+/* Ajustes para telas menores que 1024px */
+@media (max-width: 1024px) {
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #inicio,
+  #clinica,
+  #farmacia,
+  #duvidas,
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header nav a {
+    padding: 16px 0;
+  }
+
+  #inicio {
+    flex-direction: column;
+    padding: 24px 20px 64px 20px;
+  }
+
+  #inicio img {
+    width: 100%;
+    height: auto;
+  }
+
+  #clinica {
+    flex-direction: column;
+    padding: 32px 20px;
+  }
+
+  #clinica img {
+    width: 100%;
+    height: auto;
+  }
+
+  #farmacia {
+    padding: 32px 20px;
+  }
+
+  #farmacia img {
+    width: 100%;
+    height: auto;
+  }
+
+  #duvidas {
+    flex-direction: column;
+    padding: 32px 20px;
+  }
+
+  #duvidas img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 20px;
+  }
+
+  #copyright {
+    padding: 16px;
+  }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+  header nav a {
+    padding: 8px 0;
+  }
+
+  #inicio {
+    padding: 16px 10px 32px 10px;
+  }
+
+  #clinica {
+    padding: 16px 10px;
+  }
+
+  #farmacia {
+    padding: 16px 10px;
+  }
+
+  #duvidas {
+    padding: 16px 10px;
+  }
+
+  footer {
+    padding: 16px 10px;
+  }
+
+  #copyright {
+    padding: 8px;
+  }
 }
