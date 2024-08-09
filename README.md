@@ -1,3 +1,3 @@
 Projeto Pet Life
 
-https://fecamarg.github.io/onebitcode-start-petlife/
+Veja o projeto aqui: https://fecamarg.github.io/onebitcode-start-petlife/
